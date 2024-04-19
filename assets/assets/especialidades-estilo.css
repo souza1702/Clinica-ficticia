@@ -1,0 +1,273 @@
+/* Estilos Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body, html{
+    height: 100vh;
+}
+header{
+    background-color: rgba(0,202,209,255);
+    width: 100%;
+}
+.topo-conteudo{
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topo-conteudo img{
+    height: 10vh;
+}
+.topo-conteudo nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.topo-conteudo nav a{
+    text-decoration: none;
+    color: white;
+}
+.Links-especialidades{
+    width: 100%;
+    margin: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+.Links-especialidades nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Links-especialidades nav a{
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0,202,209,255);
+}
+h1{
+    text-align: center;
+    font-size: large;
+    color:  #0000008c;
+    font-weight: bold;
+    margin: 5% 0;
+}
+#ortopedia, #pediatria, #geriatria, #psicologia, #fisioterapia{
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+}
+.conteudo{
+    width: 80%;
+    margin: 2% 10%;
+}
+.conteudo h2{
+    margin: 2% 0;
+    color: #0000008c;
+}
+.tabela{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+.tabela img{
+    width: 35%;
+    height: 100%;
+}
+table{
+    border-spacing: 0;
+    height: 100%;
+    width: 65%;
+    font-size: medium;
+}
+thead{
+    background-color:rgba(0,202,209,255);
+    color: white;
+    height: 20%;
+}
+tbody tr:nth-of-type(odd){
+    background-color: rgb(189, 187, 187);
+}
+tbody tr:nth-of-type(even){
+    background-color: rgb(220, 220, 220);
+}
+footer{
+    width: 100%;
+    margin: 2% 0;
+}
+.rodape img{
+    width: 20%;
+}
+.rodape{
+    background-color: #0c6e71;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    line-height: 25px;
+    padding-bottom: 2%;
+}
+
+/* Estilo responsivo para telas de até 425px */
+@media (max-width: 425px){
+    header{
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
+    }
+    .topo-conteudo{
+        width: 90%;
+        margin: 0 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo-conteudo div{
+        width: 100vw;
+        border-top: 0.5px solid gray;
+}
+    .topo-conteudo div nav{
+        width: 60%;
+        margin: 2% 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Links-especialidades{
+       width: 90%;
+       margin: 2% 5%;
+    }
+    .Links-especialidades nav{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    h1{
+        font-size: large;
+        font-weight: bold;
+        width: 100%;
+    }
+    #ortopedia, #pediatria, #geriatria, #psicologia, #fisioterapia{
+        width: 100vw;
+        margin: 0;
+    }
+    .conteudo h2{
+        font-size: medium;
+        margin-top: 10%;
+    }
+    .conteudo p{
+        font-size: small;
+    }
+    .conteudo{
+        width: 90%;
+        margin: 1% 5%;
+    }
+    .tabela{
+        width: 100%;
+    }
+    .tabela img{
+        display: none;
+    }
+    .tabela table{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    footer{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .rodape img{
+        width: 40%;
+    }
+    .rodape{
+        width: 100%;
+        text-align: center;
+    }
+}
+   /* Responsividade telas de tablet (até 768px) */
+   @media (min-width:426px) and (max-width: 768px){
+    .topo{
+        width: 100%;
+    }
+    .topo img{
+        height: 6vh;
+    }
+    .topo-conteudo{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .topo-conteudo div{
+        width: 25%;
+    }
+    .topo-conteudo div nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Links-especialidades{
+        width: 70%;
+        margin: 2% 15%;
+    }
+    .Links-especialidades nav{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #ortopedia, #pediatria, #geriatria, #psicologia, #fisioterapia{
+        width: 100vw;
+        margin: 0;
+    }
+    .conteudo h2{
+        font-size: large;
+        padding: 2% 0;
+    }
+    .conteudo{
+        width: 90%;
+        margin: 0 5%;
+        font-size: medium;
+    }
+    .tabela img{
+        display: none;
+    }
+    .tabela{
+        width: 90%;
+        margin: 2% 5%
+    }
+    .tabela table{
+        width: 100%;
+    }
+   }
+   /* Responsividade para telas a partir de 769px (desktop e acima) */
+@media (min-width: 769px){
+    .topo{
+        width: 100%;
+    }
+    .topo-conteudo{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .topo-conteudo div{
+        width: 30%;
+    }
+    .topo-conteudo nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .Links-especialidades{
+        width: 100%;
+        margin: 2% 0;
+    }
+    .Links-especialidades nav{
+        width: 50%;
+    }
+}
